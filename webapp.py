@@ -13,7 +13,7 @@ def render_response():
     # args is a MultiDict (like a dictionary, but can store multiple values for the same key)
     # the information in args is visible in the url for the page  being requested (i.e. ... /response?color=blue)
     if color == 'red':
-        reply = "thats my favorite color, too!"
+        reply = "gg"
     else:
         reply = "Get good red is the true A1 color."
     return render_template('response.html', response = reply)
