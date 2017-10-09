@@ -15,7 +15,7 @@ def render_response():
     if color == 'red':
         reply = "thats my favorite color, too!"
     else:
-        reply = "I like red."
+        reply = "Get good red is the true A1 color."
     return render_template('response.html', response = reply)
 if __name__=="__main__":
     app.run(debug=False, port=54321)
