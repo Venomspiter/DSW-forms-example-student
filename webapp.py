@@ -12,7 +12,7 @@ def render_response():
     #the request object stores data about the request sent to the server
     # args is a MultiDict (like a dictionary, but can store multiple values for the same key)
     # the information in args is visible in the url for the page  being requested (i.e. ... /response?color=blue)
-    if color = 'red':
+    if color == 'red':
         reply = "thats my favorite color, too!"
     else:
         reply = "I like red."
