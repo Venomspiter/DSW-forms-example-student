@@ -8,6 +8,7 @@ def render_main():
 
 @app.route("/response", methods=['GET', 'POST'])
 def render_response():
+    error = None
     color = request.args['color']
     #the request object stores data about the request sent to the server
     # args is a MultiDict (like a dictionary, but can store multiple values for the same key)
@@ -19,7 +20,8 @@ def render_response():
             reply = "Get good red is the true A1 color."
         return render_template('response.html', response = reply)
     else:
-        reply = "go away baka"
-        return render_template('response.html', response = reply)
+        reply = "go away stupid"
+        error = 'dummy'
+        return render_template('response.html', response = reply, error = error)
 if __name__=="__main__":
     app.run(debug=False, port=54321)
